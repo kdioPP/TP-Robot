@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-27T03:15:39.354595" rpa="false" schemaversion="5">
+<suite id="s1" name="TP Robot" source="C:\Users\Khadime\TP Robot">
+<suite id="s1-s1" name="Helloword" source="C:\Users\Khadime\TP Robot\helloword.robot">
+<test id="s1-s1-t1" name="Recherches" line="33">
+<kw name="lancer prestashop" owner="fichier" type="SETUP">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>test prestashop</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-27T03:15:39.629594" elapsed="0.000501"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-27T03:15:39.631094" level="INFO">Opening browser 'edge' to base url 'http://www.qualifiez.fr/monPrestashop2/prestashop/index.php'.</msg>
+<arg>${URL}</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-27T03:15:39.630600" elapsed="5.228994"/>
+</kw>
+<status status="PASS" start="2024-02-27T03:15:39.628595" elapsed="5.231500"/>
+</kw>
+<kw name="Recherche site web">
+<kw name="Recherche Mot" owner="fichier">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T03:15:44.862095" level="INFO">Typing text 'T-shirt' into text field 'xpath = //*[@id="search_widget"]/form/input[2]'.</msg>
+<arg>${Loc_champrecherche}</arg>
+<arg>${mot à chercher}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T03:15:44.861594" elapsed="0.090501"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-02-27T03:15:44.953598" level="INFO">Sending key(s) ('RETURN',) to xpath = //*[@id="search_widget"]/form/input[2] element.</msg>
+<msg time="2024-02-27T03:15:45.240097" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2024-02-27T03:15:45.240097" level="INFO">Releasing special key RETURN.</msg>
+<arg>${Loc_champrecherche}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-02-27T03:15:44.952594" elapsed="2.349500"/>
+</kw>
+<arg>${Recherche Mot}</arg>
+<status status="PASS" start="2024-02-27T03:15:44.861098" elapsed="2.441496"/>
+</kw>
+<kw name="Recherche Titre" owner="fichier">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-27T03:15:47.311094" level="INFO">Page title is 'Rechercher'.</msg>
+<arg>Rechercher</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-02-27T03:15:47.303098" elapsed="0.008499"/>
+</kw>
+<status status="PASS" start="2024-02-27T03:15:47.302594" elapsed="0.009003"/>
+</kw>
+<kw name="Recherche Texte" owner="fichier">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-27T03:15:47.312594" level="INFO">Verifying element 'xpath = //*[@id="js-product-list-top"]/div[1]/p' contains exact text 'Il y a 1 produit.'.</msg>
+<arg>xpath = //*[@id="js-product-list-top"]/div[1]/p</arg>
+<arg>${nombre de produit}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-02-27T03:15:47.312594" elapsed="0.020500"/>
+</kw>
+<arg>${Recherche Texte}</arg>
+<status status="PASS" start="2024-02-27T03:15:47.312095" elapsed="0.020999"/>
+</kw>
+<arg>T-shirt</arg>
+<arg>Il y a 1 produit.</arg>
+<status status="PASS" start="2024-02-27T03:15:44.860598" elapsed="2.473000"/>
+</kw>
+<kw name="Recherche site web">
+<kw name="Recherche Mot" owner="fichier">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-27T03:15:47.335093" level="INFO">Typing text 'MUG' into text field 'xpath = //*[@id="search_widget"]/form/input[2]'.</msg>
+<arg>${Loc_champrecherche}</arg>
+<arg>${mot à chercher}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-27T03:15:47.335093" elapsed="0.066502"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-02-27T03:15:47.402596" level="INFO">Sending key(s) ('RETURN',) to xpath = //*[@id="search_widget"]/form/input[2] element.</msg>
+<msg time="2024-02-27T03:15:47.687094" level="INFO">Pressing special key RETURN to element.</msg>
+<msg time="2024-02-27T03:15:47.687595" level="INFO">Releasing special key RETURN.</msg>
+<arg>${Loc_champrecherche}</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-02-27T03:15:47.402095" elapsed="1.888002"/>
+</kw>
+<arg>${Recherche Mot}</arg>
+<status status="PASS" start="2024-02-27T03:15:47.334598" elapsed="1.955999"/>
+</kw>
+<kw name="Recherche Titre" owner="fichier">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-27T03:15:49.296097" level="INFO">Page title is 'Rechercher'.</msg>
+<arg>Rechercher</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-02-27T03:15:49.291597" elapsed="0.004997"/>
+</kw>
+<status status="PASS" start="2024-02-27T03:15:49.291097" elapsed="0.005497"/>
+</kw>
+<kw name="Recherche Texte" owner="fichier">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-27T03:15:49.298099" level="INFO">Verifying element 'xpath = //*[@id="js-product-list-top"]/div[1]/p' contains exact text 'Il y a 5 produits;.'.</msg>
+<msg time="2024-02-27T03:15:49.410094" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-27T03:15:49.410597" level="FAIL">The text of element 'xpath = //*[@id="js-product-list-top"]/div[1]/p' should have been 'Il y a 5 produits;.' but it was 'Il y a 5 produits.'.</msg>
+<arg>xpath = //*[@id="js-product-list-top"]/div[1]/p</arg>
+<arg>${nombre de produit}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="FAIL" start="2024-02-27T03:15:49.297595" elapsed="0.115500">The text of element 'xpath = //*[@id="js-product-list-top"]/div[1]/p' should have been 'Il y a 5 produits;.' but it was 'Il y a 5 produits.'.</status>
+</kw>
+<arg>${Recherche Texte}</arg>
+<status status="FAIL" start="2024-02-27T03:15:49.296594" elapsed="0.116999">The text of element 'xpath = //*[@id="js-product-list-top"]/div[1]/p' should have been 'Il y a 5 produits;.' but it was 'Il y a 5 produits.'.</status>
+</kw>
+<arg>MUG</arg>
+<arg>Il y a 5 produits;.</arg>
+<status status="FAIL" start="2024-02-27T03:15:47.334093" elapsed="2.079500">The text of element 'xpath = //*[@id="js-product-list-top"]/div[1]/p' should have been 'Il y a 5 produits;.' but it was 'Il y a 5 produits.'.</status>
+</kw>
+<kw name="Quitter prestashop" owner="fichier" type="TEARDOWN">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>quitter prestashop</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-27T03:15:49.414592" elapsed="0.000500"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-27T03:15:49.415092" elapsed="2.143003"/>
+</kw>
+<status status="PASS" start="2024-02-27T03:15:49.414092" elapsed="2.144504"/>
+</kw>
+<status status="FAIL" start="2024-02-27T03:15:39.627598" elapsed="11.931502">The text of element 'xpath = //*[@id="js-product-list-top"]/div[1]/p' should have been 'Il y a 5 produits;.' but it was 'Il y a 5 produits.'.</status>
+</test>
+<status status="FAIL" start="2024-02-27T03:15:39.382598" elapsed="12.178498"/>
+</suite>
+<status status="FAIL" start="2024-02-27T03:15:39.359093" elapsed="12.204009"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TP Robot">TP Robot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Helloword">TP Robot.Helloword</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

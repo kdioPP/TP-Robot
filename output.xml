@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-27T00:39:58.325598" rpa="false" schemaversion="5">
+<suite id="s1" name="TP Robot" source="C:\Users\Khadime\TP Robot">
+<suite id="s1-s1" name="Helloword" source="C:\Users\Khadime\TP Robot\helloword.robot">
+<test id="s1-s1-t1" name="URL" line="8">
+<kw name="Affiche URL" owner="fichier">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${lien}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-27T00:39:58.352594" elapsed="0.000000"/>
+</kw>
+<arg>${URL}</arg>
+<status status="PASS" start="2024-02-27T00:39:58.352098" elapsed="0.001000"/>
+</kw>
+<tag>non régression</tag>
+<status status="PASS" start="2024-02-27T00:39:58.351597" elapsed="0.001501"/>
+</test>
+<status status="PASS" start="2024-02-27T00:39:58.348100" elapsed="0.006495"/>
+</suite>
+<status status="PASS" start="2024-02-27T00:39:58.327593" elapsed="0.028003"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">non régression</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TP Robot">TP Robot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Helloword">TP Robot.Helloword</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
