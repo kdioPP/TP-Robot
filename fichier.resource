@@ -16,7 +16,7 @@ lancer prestashop
 
 Quitter prestashop
   Log To Console  quitter prestashop
-  Close Browser 
+  Close All Browsers 
 
 Recherche Mot
   [Arguments]  ${mot à chercher}
