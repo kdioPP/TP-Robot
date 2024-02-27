@@ -9,11 +9,13 @@ Library  SeleniumLibrary
 helloword 
   Log To Console  hello Word
 
-URL  [Setup]
+URL  
+  [Setup]
   [Tags]  non régression
   Affiche URL  ${URL}  
 
-Test en echec  [Setup]
+Test en echec  
+  [Setup]
   Should Be Equal  ${2}  ${4}
 
 #Etape Manuel
