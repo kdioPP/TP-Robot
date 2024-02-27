@@ -9,18 +9,15 @@ Library  SeleniumLibrary
 helloword 
   Log To Console  hello Word
 
-URL
+URL  [Setup]
   [Tags]  non régression
-  Affiche URL  ${URL} 
+  Affiche URL  ${URL}  
 
-Test en echec
+Test en echec  [Setup]
   Should Be Equal  ${2}  ${4}
 
-Etape Manuel
-  Execute Manual Step  Etape Manuel
-
-Ouverture navigateur 
-  Open Browser  ${URL}  edge
+#Etape Manuel
+#  Execute Manual Step  Etape Manuel
 
 Verif titre
   Title Should Be  monPrestashop1
